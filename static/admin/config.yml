@@ -20,7 +20,18 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  
+  - name: "services"
+    label: "Services"
+    folder: "src/pages/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Splash Image", name: "splash-image", widget: "image", allow-multiple: "false"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  
   - name: "pages"
     label: "Pages"
     files:
